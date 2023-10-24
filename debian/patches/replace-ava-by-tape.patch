@@ -1,0 +1,21 @@
+Description: replace ava by tape
+Author: Xavier Guimard <yadd@debian.org>
+Forwarded: not-needed
+Last-Update: 2020-12-01
+
+--- a/test.js
++++ b/test.js
+@@ -1,5 +1,5 @@
+-import test from 'ava';
+-import plur from '.';
++const test = require('tape');
++const plur = require('.');
+ 
+ test('main', t => {
+ 	t.is(plur('unicorn', 0), 'unicorns');
+@@ -37,4 +37,5 @@
+ 	t.is(plur('Shelf', 2), 'Shelves');
+ 	t.is(plur('SHELF', 1), 'SHELF');
+ 	t.is(plur('SHELF', 2), 'SHELVES');
++	t.end();
+ });

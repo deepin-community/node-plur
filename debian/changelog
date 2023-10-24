@@ -1,5 +1,77 @@
-template-repository (1.0-1) unstable; urgency=medium
+node-plur (4.0.0-2) unstable; urgency=medium
 
-  * Initial release
+  * Team upload
+  * Update standards version to 4.6.0, no changes needed.
+  * Fix GitHub tags regex
+  * Fix filenamemangle
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+ -- Yadd <yadd@debian.org>  Sat, 13 Nov 2021 12:13:14 +0100
+
+node-plur (4.0.0-1) unstable; urgency=medium
+
+  * Team upload
+
+  [ Debian Janitor ]
+  * Set debhelper-compat version in Build-Depends.
+  * Remove obsolete fields Contact, Name from debian/upstream/metadata
+    (already present in machine-readable debian/copyright).
+
+  [ Xavier Guimard ]
+  * Bump debhelper compatibility level to 13
+  * Declare compliance with policy 4.5.1
+  * Add "Rules-Requires-Root: no"
+  * Modernize debian/watch
+  * Use dh-sequence-nodejs
+  * New upstream version 4.0.0
+  * Enable upstream test using tape instead of ava
+  * Apply multi-arch hints (foreign)
+
+ -- Xavier Guimard <yadd@debian.org>  Tue, 01 Dec 2020 16:52:56 +0100
+
+node-plur (3.1.1-2) unstable; urgency=medium
+
+  * Team upload
+  * Add debian/gbp.conf
+  * Move installed files to /usr/share/nodejs
+  * Fix d/copy
+  * Switch install to pkg-js-tools
+
+ -- Xavier Guimard <yadd@debian.org>  Sat, 03 Aug 2019 15:43:46 +0200
+
+node-plur (3.1.1-1) unstable; urgency=medium
+
+  * Team upload
+  * Back to unstable
+
+ -- Suman Rajan <suman@protonmail.com>  Sat, 13 Jul 2019 22:35:03 +0530
+
+node-plur (3.0.1-1) experimental; urgency=medium
+
+  [ Utkarsh Gupta ]
+  * New upstream version 3.0.1
+  * Bump debhelper compatibility level to 11
+  * Bump Standards-Version to 4.3.0 (no changes needed)
+  * Add d/upstream/metadata
+  * Switch minimal test to pkg-js-tools
+  * Add myself as an uploader
+  * Update d/copyright
+  * Remove test as ava is not packaged
+  * Revert: Switch test to pkg-js-tools
+
+  [ Xavier Guimard ]
+  * Remove useless dependency version
+
+ -- Utkarsh Gupta <guptautkarsh2102@gmail.com>  Sun, 17 Mar 2019 07:56:57 +0100
+
+node-plur (2.1.2-2) unstable; urgency=medium
+
+  * Team upload
+  * Reupload to unstable
+
+ -- Pirate Praveen <praveen@debian.org>  Sun, 10 Sep 2017 12:25:08 +0530
+
+node-plur (2.1.2-1) experimental; urgency=low
+
+  * Initial release (Closes: #850222)
+
+ -- Abhishek Lolage <abhisheklolage@gmail.com>  Fri, 06 Jan 2017 06:06:21 +0000
